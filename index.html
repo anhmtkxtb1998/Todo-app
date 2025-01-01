@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <h2 class="app__heading">My todo app</h2>
+      <form class="app__form">
+        <input
+          type="text"
+          name=""
+          id=""
+          class="app__input"
+          placeholder="What are your tasks for today?"
+        />
+        <button class="app-btn" onmousedown="event.preventDefault()">
+          Add
+        </button>
+      </form>
+
+      <ul class="task-list"></ul>
+      <!-- <div class="task-list">
+        <div class="task-item">
+          <div class="task-item__name">Do homework</div>
+          <div class="task-item__controls">
+            <button class="task__btn edit">Edit</button>
+            <button class="task__btn done">Mark as done</button>
+            <button class="task__btn delete">Delete</button>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

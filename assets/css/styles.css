@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+}
+body {
+  font-size: 62.5%;
+}
+.app {
+  padding: 40px 300px;
+  margin: 0 auto;
+  background: #ffcbcb;
+}
+.app__heading {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.app__input {
+  margin-top: 30px;
+  width: 440px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+  font-weight: 600;
+}
+.app__input:focus {
+  outline: none;
+}
+.app-btn {
+  color: #fff;
+  width: 100px;
+  margin-left: 30px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background: transparent;
+}
+.task-list {
+  margin-top: 40px;
+  width: 570px;
+}
+.task-item {
+  margin-top: 20px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ea9652;
+}
+.task-item__name {
+  width: 250px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+.task-item__controls {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+.task__btn {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+}
+.task__btn:hover {
+  text-decoration: underline;
+}
+.edit {
+  color: #ea9652;
+}
+.done {
+  color: green;
+}
+.task-item.completed > .task-item__name {
+  /* This is a descendant selector */
+  text-decoration: line-through;
+  color: #ea9652;
+}
+.delete {
+  color: red;
+}
